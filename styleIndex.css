@@ -1,0 +1,197 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFB6C8;
+}
+
+/* header */
+header{
+    height: 5rem;
+    width: 100%;
+    background-color: #8174A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#logo{
+    height: 80px;
+    width: 80px;
+    margin-right: 30px;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    width: 85%;
+    text-align: center;
+    /* margin-left: 40px; */
+}
+#options{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#options i {
+    font-size: 2rem; /* Adjust the size as needed */
+}
+
+/* main section */
+#game-board {
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cell {
+    width: calc(100% / 3);   /* 3 cells per row */
+    height: calc(100% / 3);  /* 3 cells per column */
+    /* background-color: whitesmoke; */
+    box-sizing: border-box
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(100vh - 5rem); */
+    flex-direction: column;
+}
+#box1{
+    border-bottom: 4px solid #D2FF72;
+    border-right: 4px solid #D2FF72;
+}
+#box2{
+    border-bottom: 4px solid #D2FF72;
+    border-right: 4px solid #D2FF72;
+    border-left: 4px solid #D2FF72;
+}
+#box3{
+    border-bottom: 4px solid #D2FF72;
+    border-left: 4px solid #D2FF72;
+}
+#box4{
+    border-bottom: 4px solid #D2FF72;
+    border-right: 4px solid #D2FF72;
+     border-top: 4px solid #D2FF72;
+}
+#box5{
+    border: 4px solid #D2FF72;
+}
+#box6{
+    border-bottom: 4px solid #D2FF72;
+    border-left: 4px solid #D2FF72;
+    border-top: 4px solid #D2FF72;
+}
+#box7{
+    border-top: 4px solid #D2FF72;
+    border-right: 4px solid #D2FF72;
+}
+
+#box8{
+    border-top: 4px solid #D2FF72;
+    border-right: 4px solid #D2FF72;
+    border-left: 4px solid #D2FF72;
+}
+#box9{
+    border-top: 4px solid #D2FF72;
+    border-left: 4px solid #D2FF72;
+}
+
+/* game info */
+#game-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+/* symbol-choice */
+input[type="radio"] {
+      display: none;
+}
+.option{
+    margin-left: 10px;
+}
+#x-option:hover{
+    background-color:#d7a1b2 ;
+}
+#o-option:hover{
+    background-color:#d7a1b2 ;
+}
+/* toss button  */
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toss-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 15%;
+    display: none;;
+}
+#toss-button:hover{
+    background-color: rgb(62, 185, 62);
+}
+#status-box{
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 20rem;
+    border-radius: 10%;
+    text-align: center;
+    margin-top: 10px;
+}
+#reset-button{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 15%;
+    display: none;
+}
+#reset-button:hover{
+    background-color: rgb(208, 45, 45);
+}
+#toss-result{
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 20rem;
+    border-radius: 10%;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+/* footer */
+footer {
+    height: 3rem;
+    width: 100%;
+    background-color: #8174A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: small
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/images/tic-tac-toe_logo.png" alt="Tic Tac Toe Logo">
+        </div>
+        <h1>Tic Tac Toe</h1>
+        <div id="options">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+         <div id="status-box">
+                <p id="status">Waiting for player to choose a symbol!</p>
+        </div>
+        <div id="game-board">
+            <div id="box1" class="cell"></div>
+            <div id="box2" class="cell"></div>
+            <div id="box3" class="cell"></div>
+            <div id="box4" class="cell"></div>
+            <div id="box5" class="cell"></div>
+            <div id="box6" class="cell"></div>
+            <div id="box7" class="cell"></div>
+            <div id="box8" class="cell"></div>
+            <div id="box9" class="cell"></div>
+        </div>
+        <div id="game-info">
+            <div id="symbol-choice">
+                <h4>Choose your symbol:</h4>
+            <div class="options">
+                <div class="option" id="x-option">
+                <label>
+                    <input type="radio" name="symbol" value="x">
+                    <img src="images/x.png" alt="X" style="width:40px; height:40px;">
+                </label>
+                </div>
+                <div class="option" id="o-option">
+                <label>
+                    <input type="radio" name="symbol" value="o">
+                    <img src="images/o.png" alt="O" style="width:40px; height:40px;">
+                </label>
+                </div>
+            </div>
+            </div> 
+
+           
+            <button id="toss-button">Tap to toss!</button>
+            <p id="toss-result"></p>
+            <button id="reset-button">Reset Game</button>
+        </div>
+    </main>
+    <footer>
+        <p>developed by Samiya Maqsood</p>
+        <p>© 13th June,2025</p>
+    </footer>
+    
+    <script src="scriptIndex.js"></script>
+</body>
+</html>
